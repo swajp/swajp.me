@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/navbar";
-import MaxWidthWrapper from "@/components/max-width-wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "relative h-full min-h-screen antialiased font-sans",
+          "relative h-full min-h-screen antialiased",
           inter.className
         )}
       >
@@ -33,10 +31,7 @@ export default function RootLayout({
           storageKey="swajp-theme"
           disableTransitionOnChange
         >
-          <MaxWidthWrapper>
-            <Navbar />
-            {children}
-          </MaxWidthWrapper>
+          {children}
         </ThemeProvider>
       </body>
     </html>
