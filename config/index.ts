@@ -15,11 +15,11 @@ export const NAVIGATION = [
 
 export const PROJECTS = [
   {
-    title: "swajp",
-    description: "Full-stack developer, designer, and creator.",
+    title: "Shortner Tool",
+    description: "Fast and simple URL shortner tool.",
     href: "/",
     image: "/swajp.png",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+    tags: ["Next.js", "Tailwind CSS", "MongoDB"],
   },
   {
     title: "swajp",
