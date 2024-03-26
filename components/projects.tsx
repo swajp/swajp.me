@@ -3,7 +3,6 @@ import MaxWidthWrapper from "./max-width-wrapper";
 import { Badge } from "./ui/badge";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
