@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "swajp",
+  metadataBase: new URL("https://swajp.vercel.app"),
   description: "Full-stack developer, designer, and creator.",
 };
 
