@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <MaxWidthWrapper className="py-20">
+    <MaxWidthWrapper className="py-10 md:py-20">
       <h2 className="text-4xl font-bold">Projects</h2>
       <p className="text-muted-foreground mt-1 mb-4">
         Here are some of my projects.

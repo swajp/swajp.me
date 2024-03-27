@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <MaxWidthWrapper className="mb-16 mt-24 sm:mt-32 flex flex-col items-center justify-center text-center">
+    <MaxWidthWrapper className="mb-16 mt-16 sm:mt-32 flex flex-col items-center justify-center text-center">
       <Link
         className="inline-flex items-center rounded-lg border px-3 py-1 text-sm font-medium mb-2"
         href="/docs/changelog"
