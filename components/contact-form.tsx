@@ -87,7 +87,7 @@ export function ContactForm() {
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader className="px-0">
-            <DrawerTitle>Contacte me</DrawerTitle>
+            <DrawerTitle>Contact me</DrawerTitle>
             <DrawerDescription>
               If yo u have any questions, please feel free to contact me.
             </DrawerDescription>
