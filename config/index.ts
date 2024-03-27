@@ -15,10 +15,7 @@ export const NAVIGATION = [
     title: "Projects",
     href: "/projects",
   },
-  {
-    title: "Contact",
-    href: "/contact",
-  },
+  //contact is included in the navigation by contact-form.tsx
 ];
 
 export const PROJECTS: IProject[] = [
