@@ -86,14 +86,17 @@ export function ContactForm() {
       </DrawerTrigger>
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
-          <DrawerHeader className="px-0">
+          <DrawerHeader className="px-4 md:px-0">
             <DrawerTitle>Contact me</DrawerTitle>
             <DrawerDescription>
-              If yo u have any questions, please feel free to contact me.
+              If you have any questions, please feel free to contact me.
             </DrawerDescription>
           </DrawerHeader>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="space-y-8 px-4 md:px-0"
+            >
               <FormField
                 control={form.control}
                 name="email"
