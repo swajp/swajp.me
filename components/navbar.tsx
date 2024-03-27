@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { Menu, Square } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { usePathname } from "next/navigation";
 import { NAVIGATION } from "@/config";
 import { cn } from "@/lib/utils";
-import MaxWidthWrapper from "./max-width-wrapper";
 import { ContactForm } from "./contact-form";
 
 export default function Navbar() {
@@ -65,33 +64,23 @@ export default function Navbar() {
         </div>
         <SheetContent side="right">
           <nav className="grid gap-6 text-lg font-medium">
-            <Link href="#" className="hover:text-foreground">
-              Dashboard
-            </Link>
-            <Link
-              href="#"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              Orders
-            </Link>
-            <Link
-              href="#"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              Products
-            </Link>
-            <Link
-              href="#"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              Customers
-            </Link>
-            <Link
-              href="#"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              Analytics
-            </Link>
+            {NAVIGATION.map((item) => (
+              <SheetClose asChild>
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    "hover:text-foreground",
+                    pathname === item.href
+                      ? "text-foreground"
+                      : "text-muted-foreground"
+                  )}
+                >
+                  {item.title}
+                </Link>
+              </SheetClose>
+            ))}
+            <ContactForm />
           </nav>
         </SheetContent>
       </Sheet>
