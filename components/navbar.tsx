@@ -65,9 +65,8 @@ export default function Navbar() {
         <SheetContent side="right">
           <nav className="grid gap-6 text-lg font-medium">
             {NAVIGATION.map((item) => (
-              <SheetClose asChild>
+              <SheetClose asChild key={item.href}>
                 <Link
-                  key={item.href}
                   href={item.href}
                   className={cn(
                     "hover:text-foreground",
