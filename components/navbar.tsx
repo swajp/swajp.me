@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { NAVIGATION } from "@/config";
 import { cn } from "@/lib/utils";
 import { ContactForm } from "./contact-form";
+import { MyCommandDialog } from "./my-command-dialog";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -36,7 +37,10 @@ export default function Navbar() {
             </Link>
           ))}
           <ContactForm />
-          <ModeToggle />
+          <div className="flex gap-1">
+            <ModeToggle />
+            <MyCommandDialog />
+          </div>
         </div>
       </nav>
       <Sheet>
@@ -50,6 +54,7 @@ export default function Navbar() {
           </Link>
           <div>
             <ModeToggle />
+            <MyCommandDialog />
             <SheetTrigger className="ml-2" asChild>
               <Button
                 variant="outline"
