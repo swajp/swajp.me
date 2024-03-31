@@ -4,6 +4,7 @@ interface IProject {
   href: string;
   image: string;
   tags: string[];
+  featured?: boolean;
 }
 
 export const NAVIGATION = [
@@ -15,6 +16,10 @@ export const NAVIGATION = [
     title: "Projects",
     href: "/projects",
   },
+  {
+    title: "About",
+    href: "/about",
+  },
   //contact is included in the navigation by contact-form.tsx
 ];
 
@@ -25,6 +30,7 @@ export const PROJECTS: IProject[] = [
     href: "https://drie.cz",
     image: "/projects/drie-project.png",
     tags: ["Next.js", "React", "Tailwind CSS", "Framer motion"],
+    featured: true,
   },
   {
     title: "yogaboskovice",
@@ -32,6 +38,7 @@ export const PROJECTS: IProject[] = [
     href: "https://yogaboskovice.cz",
     image: "/projects/yogaboskovice-project.png",
     tags: ["Wordpress", "Elementor"],
+    featured: true,
   },
   {
     title: "Shortner Tool",

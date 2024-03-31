@@ -1,11 +1,11 @@
+import FeaturedProjects from "@/components/featured-projects";
 import Hero from "@/components/hero";
-import Projects from "@/components/projects";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Projects />
+      <FeaturedProjects />
     </>
   );
 }
