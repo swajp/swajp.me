@@ -53,7 +53,14 @@ export function MyCommandDialog() {
               <Link className="mr-2 h-4 w-4" />
               <span>Copy link</span>
             </CommandItem>
-            <CommandItem>
+            <CommandItem
+              onSelect={() =>
+                window.open(
+                  "https://github.com/swajp/swajp-portfolio-v2",
+                  "_ blank"
+                )
+              }
+            >
               <Code className="mr-2 h-4 w-4" />
               <span>Source code</span>
             </CommandItem>
