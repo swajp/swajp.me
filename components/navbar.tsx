@@ -36,7 +36,14 @@ export default function Navbar() {
               {item.title}
             </Link>
           ))}
-          <ContactForm />
+          <ContactForm>
+            <p
+              role="button"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              Contact
+            </p>
+          </ContactForm>
           <div className="flex gap-1">
             <ModeToggle />
             <MyCommandDialog />
@@ -84,7 +91,14 @@ export default function Navbar() {
                 </Link>
               </SheetClose>
             ))}
-            <ContactForm />
+            <ContactForm>
+              <p
+                role="button"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Contact
+              </p>
+            </ContactForm>
           </nav>
         </SheetContent>
       </Sheet>

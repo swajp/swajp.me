@@ -56,7 +56,7 @@ const formSchema = z.object({
   honeypot: z.string().optional(),
 });
 
-export function ContactForm() {
+export function ContactForm({ children }: { children: React.ReactNode }) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -76,13 +76,8 @@ export function ContactForm() {
   }
   return (
     <Drawer>
-      <DrawerTrigger asChild>
-        <p
-          role="button"
-          className="text-muted-foreground hover:text-foreground"
-        >
-          Contact
-        </p>
+      <DrawerTrigger role="button" asChild>
+        {children}
       </DrawerTrigger>
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
