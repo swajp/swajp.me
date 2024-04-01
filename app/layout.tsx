@@ -9,9 +9,16 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "swajp",
-  metadataBase: new URL("https://swajp.vercel.app"),
-  description: "Full-stack developer, designer, and creator.",
+  title: {
+    default: "swajp - A Full Stack Developer",
+    template: "%s | swajp - A Full Stack Developer",
+  },
+  metadataBase: new URL("https://swajp.me"),
+  description:
+    "Czech Full Stack Developer with a passion for web technologies. Check out my projects and get in touch with me.",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
