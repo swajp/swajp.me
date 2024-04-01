@@ -21,7 +21,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {PROJECTS.map((project) => (
           <Link href={project.href} key={project.title}>
-            <Card className="h-full">
+            <Card className="h-full group">
               <div className="p-4">
                 <div className="overflow-hidden rounded-lg">
                   <Image
