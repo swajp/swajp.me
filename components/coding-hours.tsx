@@ -32,8 +32,8 @@ const CodingHours = () => {
               <TooltipTrigger asChild>
                 <InfoIcon size={18} />
               </TooltipTrigger>
-              <TooltipContent className="border p-2 bg-background px-3 rounded-md">
-                <p>I started tracking my coding hours in Mar 13 2024.</p>
+              <TooltipContent className="border p-2 bg-background px-3 rounded-md text-sm text-muted-foreground">
+                I started tracking my coding hours in Mar 13 2024.
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
