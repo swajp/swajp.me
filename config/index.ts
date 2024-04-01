@@ -69,3 +69,33 @@ export const PROJECTS: IProject[] = [
     tags: ["Next.js", "Tailwind CSS", "Framer motion"],
   },
 ];
+
+export const FOOTER_PAGES = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "Projects",
+    href: "/projects",
+  },
+  {
+    title: "About",
+    href: "/about",
+  },
+];
+
+export const SOCIALS = [
+  {
+    title: "Github",
+    href: "https://github.com/swajp",
+  },
+  {
+    title: "Linkedin",
+    href: "https://www.linkedin.com/in/miroslav-stejskal/",
+  },
+  {
+    title: "X",
+    href: "https://twitter.com/miirastejskal",
+  },
+];
