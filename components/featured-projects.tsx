@@ -36,7 +36,7 @@ export default function FeaturedProjects() {
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
-              <CardFooter className="*:mr-2">
+              <CardFooter className="*:mr-2 *:mb-2 flex flex-wrap">
                 {project.tags.map((tag) => (
                   <Badge variant="secondary" key={tag}>
                     {tag}

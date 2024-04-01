@@ -21,7 +21,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {PROJECTS.map((project) => (
           <Link href={project.href} key={project.title}>
-            <Card className="group">
+            <Card className="h-full">
               <div className="p-4">
                 <div className="overflow-hidden rounded-lg">
                   <Image
@@ -38,7 +38,7 @@ export default function Projects() {
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
-              <CardFooter className="*:mr-2">
+              <CardFooter className="*:mr-2 *:mb-2 flex flex-wrap">
                 {project.tags.map((tag) => (
                   <Badge variant="secondary" key={tag}>
                     {tag}
