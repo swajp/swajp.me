@@ -15,8 +15,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background mx-auto w-full max-w-screen-xl px-6 md:px-20 z-50">
-      <nav className="hidden flex-col  md:flex md:flex-row md:items-center md:justify-between w-full">
+    <header className="sticky top-0 flex h-16 items-center gap-4 bg-background mx-auto w-full max-w-screen-xl px-6 md:px-20 z-50">
+      <nav className="hidden flex-col  md:flex md:flex-row md:items-center md:justify-between w-full h-full border-b">
         <Link href="/" className="flex items-center gap-2 font-semibold">
           <Square className="size-5 fill-foreground" />
           <p>swajp</p>
