@@ -19,7 +19,7 @@ export default function FeaturedProjects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {PROJECTS.filter((project) => project.featured).map((project) => (
           <Link href={project.href} key={project.title}>
-            <Card className="group">
+            <Card className="group h-full">
               <div className="p-4">
                 <div className="overflow-hidden rounded-lg">
                   <Image
