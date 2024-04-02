@@ -1,5 +1,5 @@
 import { FileText } from "lucide-react";
-import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardHeader, CardTitle } from "./ui/card";
 
 export default function CV() {
   return (

@@ -20,10 +20,10 @@ const CodingHours = () => {
   const { data: wakatimeData } = useSWR<Wakatime>("/api/wakatime", fetcher);
 
   return (
-    <Card className="h-full group">
+    <Card className="h-full group invert">
       <CardHeader>
         <div className="flex justify-between">
-          <div className="flex items-center gap-2 mb-2 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2 mb-2 text-sm">
             <ClockIcon size={18} />
             <p>Coding hours</p>
           </div>
