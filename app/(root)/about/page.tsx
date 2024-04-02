@@ -13,7 +13,7 @@ export default function AboutPage() {
       <p className="text-muted-foreground mt-1 mb-4">
         Some information about me.
       </p>
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         <div className="w-full space-y-3">
           <p>
             My name is Miroslav Stejskal, and I have been involved in web
