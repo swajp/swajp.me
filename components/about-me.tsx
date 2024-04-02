@@ -4,6 +4,7 @@ import CV from "./cv";
 import Connect from "./connect";
 import Available from "./available";
 import TechStack from "./techstack";
+import Location from "./location";
 
 export default function AboutMe() {
   return (
@@ -20,7 +21,7 @@ export default function AboutMe() {
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-2 gap-4">
             <Available />
-            <CV />
+            <Location />
           </div>
           <TechStack />
         </div>
