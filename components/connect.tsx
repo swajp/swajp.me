@@ -1,12 +1,5 @@
-import {
-  FileText,
-  Github,
-  LinkIcon,
-  Linkedin,
-  Mail,
-  MailIcon,
-} from "lucide-react";
-import { Card, CardHeader, CardTitle } from "./ui/card";
+import { Github, LinkIcon, Linkedin, MailIcon } from "lucide-react";
+import { Card, CardHeader } from "./ui/card";
 import Link from "next/link";
 
 export default function Connect() {

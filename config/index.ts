@@ -113,3 +113,56 @@ export const SOCIALS = [
     href: "https://twitter.com/miirastejskal",
   },
 ];
+
+//
+
+export const TECH_STACK = [
+  {
+    title: "Next.js",
+    href: "https://nextjs.org",
+  },
+  {
+    title: "React",
+    href: "https://reactjs.org",
+  },
+  {
+    title: "Git",
+    href: "https://git-scm.com",
+  },
+  {
+    title: "Figma",
+    href: "https://figma.com",
+  },
+  {
+    title: "MySQL",
+    href: "https://www.mysql.com",
+  },
+  {
+    title: "TypeScript",
+    href: "https://www.typescriptlang.org",
+  },
+  {
+    title: "Docker",
+    href: "https://www.docker.com",
+  },
+  {
+    title: "Tailwind CSS",
+    href: "https://tailwindcss.com",
+  },
+  {
+    title: "Framer Motion",
+    href: "https://www.framer.com/motion",
+  },
+  {
+    title: "MongoDB",
+    href: "https://www.mongodb.com",
+  },
+  {
+    title: "Wordpress",
+    href: "https://wordpress.org",
+  },
+  {
+    title: "Convex",
+    href: "https://convex.dev",
+  },
+];
