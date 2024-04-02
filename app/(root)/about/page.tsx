@@ -47,7 +47,7 @@ export default function AboutPage() {
           </p>
           <p>
             Beyond web development, I have a passion for badminton and enjoy
-            rewatching episodes of The Walking Dead."
+            rewatching episodes of The Walking Dead.
           </p>
         </div>
         <div className="w-full"></div>
