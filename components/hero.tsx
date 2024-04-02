@@ -30,14 +30,6 @@ export default function Hero() {
         about building modern web applications using Next.js, React, and
         Tailwind CSS.
       </p>
-
-      <Link
-        className={buttonVariants({ size: "lg", className: "mt-5" })}
-        href={"/dashboard"}
-        target="_blank"
-      >
-        Get started <ArrowRight className="w-5 h-5 ml-2" />
-      </Link>
     </MaxWidthWrapper>
   );
 }
