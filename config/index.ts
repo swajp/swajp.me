@@ -41,6 +41,20 @@ export const PROJECTS: IProject[] = [
     featured: true,
   },
   {
+    title: "uzx-elektro",
+    description: "A website for an company using Loxone technology",
+    href: "https://uzx-elektro.cz",
+    image: "/projects/uzxelektro-project.png",
+    tags: ["Next.js", "Tailwind CSS"],
+  },
+  {
+    title: "uzx-security",
+    description: "A website for a security company.",
+    href: "https://uzx-security.cz",
+    image: "/projects/uzxsecurity-project.png",
+    tags: ["Next.js", "Tailwind CSS"],
+  },
+  {
     title: "Shortner Tool",
     description: "Fast and simple URL shortner tool.",
     href: "https://short.drie.cz",
