@@ -27,7 +27,8 @@ export default function AboutPage() {
             latest approaches in web development.
           </p>
           <p>
-            One of my favorite projects that I've worked on is a project called{" "}
+            One of my favorite projects that I&apos;ve worked on is a project
+            called{" "}
             <Link
               href="https://drie.cz"
               className="underline underline-offset-2"
@@ -40,9 +41,9 @@ export default function AboutPage() {
           </p>
           <p>
             My dream is to live in an environment where every website is modern
-            and attractive. Even though I haven't been employed in this field
-            yet, it doesn't mean I lack the passion to learn new things
-            efficiently and quickly.
+            and attractive. Even though I haven&apos;t been employed in this
+            field yet, it doesn&apos;t mean I lack the passion to learn new
+            things efficiently and quickly.
           </p>
           <p>
             Beyond web development, I have a passion for badminton and enjoy
