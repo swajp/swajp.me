@@ -1,10 +1,10 @@
 import MaxWidthWrapper from "./max-width-wrapper";
 import CodingHours from "./coding-hours";
-import CV from "./cv";
 import Connect from "./connect";
 import Available from "./available";
 import TechStack from "./techstack";
 import Location from "./location";
+import GiveStar from "./give-star";
 
 export default function AboutMe() {
   return (
@@ -15,7 +15,7 @@ export default function AboutMe() {
           <Connect />
           <div className="grid grid-cols-2 gap-4">
             <CodingHours />
-            <CV />
+            <GiveStar />
           </div>
         </div>
         <div className="flex flex-col gap-4">
