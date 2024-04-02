@@ -24,6 +24,7 @@ import {
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   email: z
@@ -67,11 +68,36 @@ export function ContactForm({ children }: { children: React.ReactNode }) {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    if (values.honeypot) {
-      console.log("spam detected!");
-    } else {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      if (values.honeypot) {
+        return;
+      }
       console.log(values);
+
+      const response = await fetch("/api/contact/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        toast.success("Message sent successfully.", {
+          duration: 5000,
+        });
+
+        form.reset();
+      } else {
+        toast.error("Failed to send the form. Please try again.", {
+          duration: 5000,
+        });
+      }
+    } catch (error) {
+      toast.error("Failed to send the form. Please try again.", {
+        duration: 5000,
+      });
     }
   }
   return (
