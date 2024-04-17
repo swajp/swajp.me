@@ -165,4 +165,17 @@ export const TECH_STACK = [
     title: "Convex",
     href: "https://convex.dev",
   },
+  {
+    title: "shadcn/ui",
+    href: "https://ui.shadcn.com",
+  },
 ];
+
+export const PROJECT_STUDY = {
+  title: "uzx-elektro / uzx-security",
+  description:
+    "A complete redesign of the company's website. Design was created in Figma. The website is built with Next.js and Tailwind CSS. For components, I used shadcn/ui. The company is focused on Loxone technology and JABLOTRON security.",
+  href: "/uzx",
+  image: "/projects/uzx-mix.png",
+  tags: ["Next.js", "React", "Tailwind CSS", "shadcn/ui"],
+};
