@@ -25,6 +25,7 @@ export default function ProjectStudy() {
           <div className="p-4 w-full">
             <div className="overflow-hidden rounded-lg">
               <Image
+                priority
                 alt="Image"
                 className="group-hover:scale-105 transition-all"
                 width={1280}
