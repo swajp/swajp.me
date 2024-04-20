@@ -18,7 +18,7 @@ export default function ProjectStudy() {
     <MaxWidthWrapper className="py-10 md:py-20">
       <h2 className="text-4xl font-bold">Project study</h2>
       <p className="text-muted-foreground mt-1 mb-4">
-        Here are some of my projects.
+        A deep dive into a recent project.
       </p>
       <Link href={project.href}>
         <Card className="h-full group flex flex-col lg:flex-row justify-between">
