@@ -26,7 +26,6 @@ export default function FeaturedProjects() {
                     alt="Image"
                     className="group-hover:scale-105 transition-all"
                     width={1280}
-                    priority
                     height={832}
                     quality={100}
                     src={project.image}
