@@ -90,7 +90,7 @@ export function MyCommandDialog() {
               }
             >
               <Linkedin className="mr-2 h-4 w-4" />
-              <span>Github</span>
+              <span>Linkedin</span>
             </CommandItem>
           </CommandGroup>
         </CommandList>
