@@ -52,10 +52,10 @@ export default function UzxPage() {
             <CardHeader className="pt-0 pb-3">
               <CardTitle>uzx-elektro</CardTitle>
               <CardDescription>
-                A complete redesign of the company's website. Design was created
-                in Figma. The website is built with Next.js and Tailwind CSS.
-                For components, I used shadcn/ui. This website is focused on
-                Loxone technology.
+                A complete redesign of the company&apos;s website. Design was
+                created in Figma. The website is built with Next.js and Tailwind
+                CSS. For components, I used shadcn/ui. This website is focused
+                on Loxone technology.
               </CardDescription>
             </CardHeader>
             <CardFooter className="*:mr-2 *:mb-2 flex flex-wrap">
@@ -83,10 +83,10 @@ export default function UzxPage() {
             <CardHeader className="pt-0 pb-3">
               <CardTitle>uzx-security</CardTitle>
               <CardDescription>
-                A complete redesign of the company's website. Design was created
-                in Figma. The website is built with Next.js and Tailwind CSS.
-                For components, I used shadcn/ui. This website is focused on
-                Jablotron alarm systems.
+                A complete redesign of the company&apos;s website. Design was
+                created in Figma. The website is built with Next.js and Tailwind
+                CSS. For components, I used shadcn/ui. This website is focused
+                on Jablotron alarm systems.
               </CardDescription>
             </CardHeader>
             <CardFooter className="*:mr-2 *:mb-2 flex flex-wrap">
@@ -148,7 +148,7 @@ export default function UzxPage() {
                 Are you interested?
               </h1>
               <p className="text-muted-foreground mt-1 text-center">
-                Let's work together on your project.
+                Let&apos;s work together on your project.
               </p>
             </div>
           </Card>
