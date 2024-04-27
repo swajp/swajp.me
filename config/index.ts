@@ -30,7 +30,6 @@ export const PROJECTS: IProject[] = [
     href: "https://drie.cz",
     image: "/projects/drie-project.png",
     tags: ["Next.js", "React", "Tailwind CSS", "Framer motion"],
-    featured: true,
   },
   {
     title: "yogaboskovice",
@@ -38,6 +37,14 @@ export const PROJECTS: IProject[] = [
     href: "https://yogaboskovice.cz",
     image: "/projects/yogaboskovice-project.png",
     tags: ["Wordpress", "Elementor"],
+    featured: true,
+  },
+  {
+    title: "mujqrkod.cz",
+    description: "QR code generator without registration. Fast and simple.",
+    href: "https://mujqrkod.vercel.app",
+    image: "/projects/mujqrkod-project.png",
+    tags: ["Next.js", "Tailwind CSS", "shadcn/ui"],
     featured: true,
   },
   {
