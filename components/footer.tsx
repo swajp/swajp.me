@@ -1,4 +1,4 @@
-import { FOOTER_PAGES, SOCIALS } from "@/config";
+import { FOOTER_PAGES, OTHERS, SOCIALS } from "@/config";
 import Link from "next/link";
 
 export default function Footer() {
@@ -22,6 +22,17 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-4 w-fit">
             {SOCIALS.map((social) => (
+              <Link
+                key={social.href}
+                href={social.href}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {social.title}
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-col gap-4 w-fit">
+            {OTHERS.map((social) => (
               <Link
                 key={social.href}
                 href={social.href}
