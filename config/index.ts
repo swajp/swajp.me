@@ -121,6 +121,13 @@ export const SOCIALS = [
   },
 ];
 
+export const OTHERS = [
+  {
+    title: "Buy me a coffee",
+    href: "https://buymeacoffee.com/swajp",
+  },
+];
+
 //
 
 export const TECH_STACK = [
@@ -185,4 +192,13 @@ export const PROJECT_STUDY = {
   href: "/uzx",
   image: "/projects/uzx-mix.png",
   tags: ["Next.js", "React", "Tailwind CSS", "shadcn/ui"],
+};
+
+export const TV_MOMENT = {
+  title: "Česká televize - chytrý záhon",
+  description:
+    "Me and my friends created smart garden in FabLab Brno. Czech Television was interested in our project and made a report about it.",
+  href: "https://ceskatelevize.cz/porady/10435049455-dobre-rano/323291310020045/cast/979790/?fbclid=PAAabfE1ERbpcae1dZn3FQuPekhNSWUEe0rlydX2hdSdR4PSrd196cWCwEJo4_aem_th_AcUvo8AdEaCSL-inO6rt8vajivjaILd7Ec2Ftl1_cf_lvweMQBbmn4y3t7-_G02DM_o",
+  image: "/projects/chytry-zahon.png",
+  tags: ["PHP", "Arduino", "Figma", "3D printing"],
 };
