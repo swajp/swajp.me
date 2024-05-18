@@ -1,4 +1,4 @@
-import { Github, LinkIcon, Linkedin, MailIcon } from "lucide-react";
+import { CoffeeIcon, Github, LinkIcon, Linkedin, MailIcon } from "lucide-react";
 import { Card, CardHeader } from "./ui/card";
 import Link from "next/link";
 
@@ -28,6 +28,10 @@ export default function Connect() {
           <Link href="https://www.linkedin.com/in/miroslav-stejskal/">
             <Linkedin size={18} className="mr-3" />
             Miroslav Stejskal
+          </Link>
+          <Link href="https://buymeacoffee.com/swajp">
+            <CoffeeIcon size={18} className="mr-3" />
+            Buy me a coffee
           </Link>
           <Link href="https://twitter.com/miirastejskal/">
             <svg
