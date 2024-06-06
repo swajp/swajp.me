@@ -25,6 +25,15 @@ export const NAVIGATION = [
 
 export const PROJECTS: IProject[] = [
   {
+    title: "casecobra",
+    description:
+      "E-commerce website for a company selling cases for mobile phones.",
+    href: "https://shop-casecobra.vercel.app",
+    image: "/projects/casecobra-project.png",
+    tags: ["Next.js", "React", "Tailwind CSS", "Stripe", "Prisma"],
+    featured: true,
+  },
+  {
     title: "DRIE",
     description: "Full-stack developer, designer, and creator.",
     href: "https://drie.cz",
@@ -45,7 +54,6 @@ export const PROJECTS: IProject[] = [
     href: "https://mujqrkod.vercel.app",
     image: "/projects/mujqrkod-project.png",
     tags: ["Next.js", "Tailwind CSS", "shadcn/ui"],
-    featured: true,
   },
   {
     title: "uzx-elektro",
