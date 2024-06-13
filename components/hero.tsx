@@ -1,9 +1,5 @@
-import Link from "next/link";
 import MaxWidthWrapper from "./max-width-wrapper";
-import { buttonVariants } from "./ui/button";
-import { ArrowRight } from "lucide-react";
 import { ContactForm } from "./contact-form";
-import { DrawerTrigger } from "./ui/drawer";
 
 export default function Hero() {
   return (

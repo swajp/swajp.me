@@ -1,5 +1,5 @@
 "use client";
-import { ExternalLink, FileText, Star } from "lucide-react";
+import { ExternalLink, Star } from "lucide-react";
 import { Card, CardHeader, CardTitle } from "./ui/card";
 import useSWR from "swr";
 import { fetcher } from "@/lib/fetcher";
