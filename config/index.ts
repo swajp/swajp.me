@@ -1,11 +1,12 @@
-interface IProject {
+type Project = {
   title: string;
   description: string;
   href: string;
+  github?: string;
   image: string;
   tags: string[];
   featured?: boolean;
-}
+};
 
 export const NAVIGATION = [
   {
@@ -23,12 +24,13 @@ export const NAVIGATION = [
   //contact is included in the navigation by contact-form.tsx
 ];
 
-export const PROJECTS: IProject[] = [
+export const PROJECTS: Project[] = [
   {
     title: "devkoutek.cz",
     description:
       "A discord place for czech developers. To show their projects and help each other.",
     href: "https://devkoutek.cz",
+    github: "https://github.com/swajp/devkoutek.cz",
     image: "/projects/devkoutek-project.png",
     tags: ["NextJS", "Tailwind CSS"],
     featured: true,
@@ -38,6 +40,7 @@ export const PROJECTS: IProject[] = [
     description:
       "E-commerce website for a company selling cases for mobile phones.",
     href: "https://shop-casecobra.vercel.app",
+    github: "https://github.com/swajp/casecobra",
     image: "/projects/casecobra-project.png",
     tags: ["Next.js", "React", "Tailwind CSS", "Stripe", "Prisma"],
     featured: true,
@@ -60,6 +63,7 @@ export const PROJECTS: IProject[] = [
     title: "mujqrkod.cz",
     description: "QR code generator without registration. Fast and simple.",
     href: "https://mujqrkod.vercel.app",
+    github: "https://github.com/swajp/mujqrkod",
     image: "/projects/mujqrkod-project.png",
     tags: ["Next.js", "Tailwind CSS", "shadcn/ui"],
   },
@@ -88,6 +92,7 @@ export const PROJECTS: IProject[] = [
     title: "my-story",
     description: "Share your stories with the world.",
     href: "https://story-sharing-app-nu.vercel.app/",
+    github: "https://github.com/swajp/my-story",
     image: "/projects/mystory-project.png",
     tags: ["Next.js", "Tailwind CSS", "Framer motion", "Convex"],
   },

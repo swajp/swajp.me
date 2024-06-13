@@ -11,6 +11,7 @@ import {
 import { PROJECTS } from "@/config";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
+import GithubLink from "./github-link";
 
 export default function FeaturedProjects() {
   return (
@@ -18,9 +19,9 @@ export default function FeaturedProjects() {
       <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {PROJECTS.filter((project) => project.featured).map((project) => (
-          <Link href={project.href} key={project.title}>
-            <Card className="group h-full">
-              <div className="p-4">
+          <Card className="h-full group" key={project.title}>
+            <div className="p-4">
+              <Link href={project.href}>
                 <div className="overflow-hidden rounded-lg">
                   <Image
                     alt="Image"
@@ -31,20 +32,25 @@ export default function FeaturedProjects() {
                     src={project.image}
                   />
                 </div>
-              </div>
-              <CardHeader className="pt-0 pb-3">
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardFooter className="*:mr-2 *:mb-2 flex flex-wrap">
-                {project.tags.map((tag) => (
-                  <Badge variant="secondary" key={tag}>
-                    {tag}
-                  </Badge>
-                ))}
-              </CardFooter>
-            </Card>
-          </Link>
+              </Link>
+            </div>
+            <CardHeader className="pt-0 pb-3">
+              <CardTitle>
+                <div className="flex gap-2 items-center">
+                  <Link href={project.href}>{project.title}</Link>
+                  {project.github && <GithubLink link={project.github} />}
+                </div>
+              </CardTitle>
+              <CardDescription>{project.description}</CardDescription>
+            </CardHeader>
+            <CardFooter className="*:mr-2 *:mb-2 flex flex-wrap">
+              {project.tags.map((tag) => (
+                <Badge variant="secondary" key={tag}>
+                  {tag}
+                </Badge>
+              ))}
+            </CardFooter>
+          </Card>
         ))}
       </div>
       <div className="flex justify-center">
