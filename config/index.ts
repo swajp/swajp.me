@@ -25,6 +25,15 @@ export const NAVIGATION = [
 
 export const PROJECTS: IProject[] = [
   {
+    title: "devkoutek.cz",
+    description:
+      "A discord place for czech developers. To show their projects and help each other.",
+    href: "https://devkoutek.cz",
+    image: "/projects/devkoutek-project.png",
+    tags: ["NextJS", "Tailwind CSS"],
+    featured: true,
+  },
+  {
     title: "casecobra",
     description:
       "E-commerce website for a company selling cases for mobile phones.",
@@ -46,7 +55,6 @@ export const PROJECTS: IProject[] = [
     href: "https://yogaboskovice.cz",
     image: "/projects/yogaboskovice-project.png",
     tags: ["Wordpress", "Elementor"],
-    featured: true,
   },
   {
     title: "mujqrkod.cz",
