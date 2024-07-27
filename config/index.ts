@@ -26,6 +26,14 @@ export const NAVIGATION = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "Place of amazing portfolios",
+    description: "Are you looking for inspiration for your portfolio? You're in the right place! Here you will find a collection of amazing portfolios by amazing people.",
+    href: "https://swajp.me",
+    image: "/projects/list-project.png",
+    tags: ["Next.js", "Tailwind CSS"],
+    featured: true,
+  },
+  {
     title: "devkoutek.cz",
     description:
       "A discord place for czech developers. To show their projects and help each other.",
@@ -33,7 +41,6 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/swajp/devkoutek.cz",
     image: "/projects/devkoutek-project.png",
     tags: ["NextJS", "Tailwind CSS"],
-    featured: true,
   },
   {
     title: "casecobra",
