@@ -28,7 +28,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Place of amazing portfolios",
     description: "Are you looking for inspiration for your portfolio? You're in the right place! Here you will find a collection of amazing portfolios by amazing people.",
-    href: "https://swajp.me",
+    href: "https://list.swajp.me",
     github: "https://github.com/swajp/list-swajp.me",
     image: "/projects/list-project.png",
     tags: ["Next.js", "Tailwind CSS"],
