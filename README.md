@@ -1,3 +1,8 @@
+
+<a href="https://buymeacoffee.com/swajp" alt="buyacoffe">
+  <img src="https://github.com/user-attachments/assets/37b0e28f-c82f-42a9-bd1e-d937488758ab"/>
+</a>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
