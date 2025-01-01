@@ -19,8 +19,10 @@ async function getPostFromParams(params: BlogPageProps["params"]) {
 export async function generateStaticParams(): Promise<BlogPageProps["params"][]> {
     return posts.map(post => ({ slug: post.slugAsParams.split("/") }))
 }
-export default async function BlogPage({ params }: BlogPageProps) {
-    const post = await getPostFromParams(params)
+export default async function BlogPage({ params }: { params: Promise<{ slug: string }> }) {
+    const slug = (await params).slug
+
+    const post = await getPostFromParams({ slug: [slug] })
 
     if (!post || !post.published) {
         notFound()
