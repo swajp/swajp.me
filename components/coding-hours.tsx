@@ -33,7 +33,15 @@ const CodingHours = () => {
                         </Tooltip>
                     </TooltipProvider>
                 </div>
-                <CardTitle>{wakatimeData ? Math.round(wakatimeData.seconds / 60 / 60) + " hrs" : "No data"}</CardTitle>
+                <CardTitle className="font-mono">
+                    {wakatimeData ? (
+                        Math.round(wakatimeData.seconds / 60 / 60) + "hrs"
+                    ) : (
+                        <div>
+                            <div className="animate-pulse h-5 w-20 bg-primary/20 rounded-lg"></div>
+                        </div>
+                    )}
+                </CardTitle>
             </CardHeader>
         </Card>
     )
