@@ -30,13 +30,21 @@ export const NAVIGATION = [
 
 export const PROJECTS: Project[] = [
     {
+        title: "Resume creator tool with AI",
+        description: "Create your resume in a few minutes. The tool will help you with the content and design.",
+        href: "https://cvzdarma.cz",
+        image: "/projects/cvzdarma-project.png",
+        tags: ["Next.js 15", "Tailwind CSS", "Prisma", "OpenAI", "Server actions", "shadcn/ui", "nodemailer", "Clerk"],
+        featured: true
+    },
+    {
         title: "Place of amazing portfolios",
         description:
             "Are you looking for inspiration for your portfolio? You're in the right place! Here you will find a collection of amazing portfolios by amazing people.",
         href: "https://list.swajp.me",
         github: "https://github.com/swajp/list-swajp.me",
         image: "/projects/list-project.png",
-        tags: ["Next.js", "Tailwind CSS"],
+        tags: ["Next.js 14", "Tailwind CSS", "Convex", "shadcn/ui", "nodemailer", "Clerk"],
         featured: true
     },
     {
@@ -53,8 +61,7 @@ export const PROJECTS: Project[] = [
         href: "https://shop-casecobra.vercel.app",
         github: "https://github.com/swajp/casecobra",
         image: "/projects/casecobra-project.png",
-        tags: ["Next.js", "React", "Tailwind CSS", "Stripe", "Prisma"],
-        featured: true
+        tags: ["Next.js", "React", "Tailwind CSS", "Stripe", "Prisma"]
     },
     {
         title: "DRIE",
@@ -228,8 +235,7 @@ export const PROJECT_STUDY = {
 
 export const TV_MOMENT = {
     title: "Česká televize - chytrý záhon",
-    description:
-        "Me and my friends created smart garden in FabLab Brno. Czech Television was interested in our project and made a report about it.",
+    description: "Me and my friends created smart garden in FabLab Brno. Czech Television was interested in our project and made a report about it.",
     href: "https://ceskatelevize.cz/porady/10435049455-dobre-rano/323291310020045/cast/979790/?fbclid=PAAabfE1ERbpcae1dZn3FQuPekhNSWUEe0rlydX2hdSdR4PSrd196cWCwEJo4_aem_th_AcUvo8AdEaCSL-inO6rt8vajivjaILd7Ec2Ftl1_cf_lvweMQBbmn4y3t7-_G02DM_o",
     image: "/projects/chytry-zahon.png",
     tags: ["PHP", "Arduino", "Figma", "3D printing"]
