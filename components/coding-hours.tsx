@@ -5,14 +5,28 @@ import useSWR from "swr"
 
 import { fetcher } from "@/lib/fetcher"
 import { Card, CardHeader, CardTitle } from "./ui/card"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip"
+import { cn } from "@/lib/utils"
 
 type Wakatime = {
     seconds: number
 }
 
 const CodingHours = () => {
-    const { data: wakatimeData } = useSWR<Wakatime>("/api/wakatime", fetcher)
+    const { data: wakatimeData, error, isLoading } = useSWR<Wakatime>("/api/wakatime", fetcher)
+
+    let content
+
+    if (error) {
+        content = <span className="text-red-500">Error</span>
+    } else if (isLoading || !wakatimeData) {
+        content = <div className="animate-pulse h-5 w-20 bg-primary/20 rounded-lg"></div>
+    } else {
+        const hours = Number.isFinite(wakatimeData?.seconds) ? Math.round(wakatimeData.seconds / 60 / 60) : 0
+
+        const shouldBlur = hours === 0
+        content = <span className={cn("px-2 py-1 rounded transition-all", shouldBlur && "bg-black/40 blur-sm")}>{hours}hrs</span>
+    }
 
     return (
         <Card className="h-full group invert">
@@ -33,15 +47,7 @@ const CodingHours = () => {
                         </Tooltip>
                     </TooltipProvider>
                 </div>
-                <CardTitle className="font-mono">
-                    {wakatimeData ? (
-                        Math.round(wakatimeData.seconds / 60 / 60) + "hrs"
-                    ) : (
-                        <div>
-                            <div className="animate-pulse h-5 w-20 bg-primary/20 rounded-lg"></div>
-                        </div>
-                    )}
-                </CardTitle>
+                <CardTitle className="font-mono">{content}</CardTitle>
             </CardHeader>
         </Card>
     )
