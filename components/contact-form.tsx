@@ -9,6 +9,8 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { toast } from "sonner"
+import { useState } from "react"
+import { Loader2 } from "lucide-react"
 
 const formSchema = z.object({
     email: z
@@ -42,6 +44,7 @@ const formSchema = z.object({
 })
 
 export function ContactForm({ children }: { children: React.ReactNode }) {
+    const [loading, setLoading] = useState(false)
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -54,10 +57,11 @@ export function ContactForm({ children }: { children: React.ReactNode }) {
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
+            setLoading(true)
+
             if (values.honeypot) {
                 return
             }
-            console.log(values)
 
             const response = await fetch("/api/contact/", {
                 method: "POST",
@@ -72,13 +76,17 @@ export function ContactForm({ children }: { children: React.ReactNode }) {
                     duration: 5000
                 })
 
+                setLoading(false)
+
                 form.reset()
             } else {
+                setLoading(false)
                 toast.error("Failed to send the form. Please try again.", {
                     duration: 5000
                 })
             }
         } catch (error) {
+            setLoading(false)
             toast.error("Failed to send the form. Please try again.", {
                 duration: 5000
             })
@@ -151,8 +159,15 @@ export function ContactForm({ children }: { children: React.ReactNode }) {
                                 <DrawerClose asChild className="w-full">
                                     <Button variant="outline">Cancel</Button>
                                 </DrawerClose>
-                                <Button type="submit" className="w-full">
-                                    Submit
+                                <Button disabled={loading} type="submit" className="w-full">
+                                    {loading ? (
+                                        <>
+                                            <Loader2 className="h-4 mr-1 w-4 animate-spin" />
+                                            Sending...
+                                        </>
+                                    ) : (
+                                        <p>Submit</p>
+                                    )}
                                 </Button>
                             </div>
                         </form>
